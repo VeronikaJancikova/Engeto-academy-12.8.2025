@@ -59,23 +59,26 @@ Neupravujte data v primárních tabulkách! Pokud bude potřeba transformovat ho
 Zde jsem začala vytvořením SQL pro každou jednotlivou výzkumnou otázku, abych si ověřila, která data (sloupce) ze zdrojových tabulek budu skutečně ve výsledné tabulce potřebovat, a která data budou zbytečná.
 Mým cílem bylo poskytnout data tak, aby byla ve výsledku přehledná a koncovému uživateli srozumitelná a snadno odprezentovatelná.
 Jakmile se mi podařilo postupně zodpovědět všechny 4 výzkumné otázky, přistoupila jsem k vytvoření samotné primary tabulky a úpravě původních SQL dotazů. Následně jsem si ověřila, že dotazy správně fungují i s primary tabulkou, pojmenovanou jako **t_veronika_jancikova_project_SQL_primary_final**.
-1. Výzkumná otázka č.1
+1. Výzkumná otázka č. 1 - 
 Zde jsem měla největší problém s porovnáním výsledků meziročně, k tomu jsem se rozhodla použít fuknci LAG. Ta porovnává hodnotu s předchozím rokem, čímž určuje meziroční rozdíl v průměrné mzdě.
 Z výsledku lze vidět, která odvětví rostla nejrychleji a která naopak zaznamenala pokles mezd.
-2. Výzkumná otázka č.2
+2. Výzkumná otázka č. 2 - 
 Zde jsem jako základ použila již spočítanou průměrnou mzdu z otázky č. 1 - toto je votvořeno jako CTE, které předvybere jen průměrně mzdy. 
 Dále jsem našla průměrnou cenu mléka a chleba a spojila mzdy a ceny podle roku. Následně jsem vytvořila nové sloupce s výpočtem pro litry mléka a počet chleba.
 Výsledek názorně ukazuje vývoj kupní síly – tedy, zda si lidé za mzdu mohli dovolit více nebo méně základních potravin než dříve.
-3. Výzkumná otázka č.3
-V tomto dotazu porovnávám průměrné roční ceny všech kategorií potravin a procentuální meziroční změnu pro každou z nich.
-4. Výzkumná otázka č.4
+3. Výzkumná otázka č. 3 - 
+	V tomto dotazu porovnávám průměrné roční ceny všech kategorií potravin a procentuální meziroční změnu pro každou z nich.
+4. Výzkumná otázka č. 4 - 
 V této části jsou spočítány meziroční procentuální nárůsty průměrných cen potravin a mezd.  
 Jako první krok jsem tyto nárůsty spočítala samostatně, ve druhém kroku jsem je použila jako CTE a následně jsem oba výsledky porovnala podle roku.
 
 
 ### 2. Secondary table
+Pro poslední výzkumnou otázku jsem vytvořila tabulku **t_veronika_jancikova_project_SQL_secondary_final**
 
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+5. Výzkumná otázka č. 5 - 
+Tady jsem se rozhodla omezit výsledky pouze na Českou republiku, protože údaje o cenách potravin a mzdách máme pouze pro ČR. Ponechání všech ostatních zemí z tabuky *countries* by jen prodloužilo výslednou tabulku, ve které by se tak zobrazovaly i nerelevantní informace (prázdné sloupce). 
+V reálu bych na toto upozornila a zpracovala podle požadavku zadavatele, podle potřeby bych všechny země z tabulky *countries* připojila.
 
 
 ## Výzkumné otázky
@@ -124,3 +127,9 @@ Po porovnání jsou ve výsledku vidět dva roky, ve kterých byl meziroční n�
 Jedná se o roky:
 - 2013 - nárůst o 11,51 %
 - 2017 - nárůst o 11,24 %
+
+### 5. Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
+Z výsledku vyplývá, že v obdobích výraznějšího hospodářského růstu dochází ke zvyšování mezd spíše **se zpožděním jednoho roku**, což naznačuje, že mzdy reagují na ekonomický růst postupně.
+Toto se týká například let 2006–2007 a 2016–2018, kdy výraznější růst HDP v jednom roce předcházel vyššímu růstu mezd v roce následujícím.
+V případě cen potravin je vztah k růstu HDP slabší. Ceny potravin jsou ovlivněny i dalšími faktory, (inflace, ceny energií), a jejich růst tedy nelze přímo vysvětlit pouze změnami HDP.
+Růst HDP má tedy spíše nepřímý a zpožděný vliv na mzdy, zatímco vliv na ceny potravin je omezený a kolísavý.
