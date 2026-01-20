@@ -104,7 +104,6 @@ V letech 2020 a 2021 zaznamenal nárůst obor zdravotní péče, což mohlo být
 Zároveň v roce 2020 zaznamenaly pokles obory Činnosti v oblasti nemovitostí a Ubytování, stravování a pohostinství, což mohlo být opět způsobeno pandemií a s ní spojenými lockdowny, zákazy cestování a ubytovávání.
 Oproti tomu v roce 2013 nastal pokles v oblasti Peněžnictví a pojišťovnictví, což mohla způsobit recese, která v té době probíhala.
 Ovšem vyhledem k množství zpracovaných záznamů je celkový trend spíše vzestupný.
-NULL hodnota zde znamená, že se jedná o první rok měření a tedy nemáme žádný předchozí rok pro srovnání.
 
 ### 2. Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 Ve výsledné tabulce vidíme, že prvním rokem srovnání je rok 2006, posledním rokem je rok 2018.
@@ -113,7 +112,7 @@ Za průměrnou mzdu jsme tedy v těchto dvou letech mohli nakoupit následovně:
 
 |Druh potraviny                |2006                          |2018                         |
 |----------------|-------------------------------|-----------------------------|
-|kg chleba|1283            |1340            |
+|kg chleba|1282            |1340            |
 |l mléka          |1432            |1639           |
 
 Vidíme, že v průběhu let rostla průměrná mzda, a spolu s ní počet kg chleba či litrů mléka, které jsme si za tuto mzdu mohli koupit.
@@ -123,10 +122,9 @@ Ve výsledku tohoto dotazu vidíme dvě kategorie zboží, jejichž ceny rostly 
 a to Cukr krystalový (pokles ceny o -1,92 %) a Rajská jablka červená kulatá (pokles ceny o -0,74 %).
 
 ### 4. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
-Po porovnání jsou ve výsledku vidět dva roky, ve kterých byl meziroční nárůst cen o více než 10 % vyšší než růst mezd. 
-Jedná se o roky:
-- 2013 - nárůst o 11,51 %
-- 2017 - nárůst o 11,24 %
+Prvním rokem měření je rok 2007, posledním pak rok 2018. 
+Ve výsledné tabulce je vidět, že v tomto období nenastal rok, ve kterém by byl meziroční nárůst cen potravin o více než 10 % vyšší než nárůst mezd.
+Největší rozdíl nastal v roce 2013, a to o 7,04 %.
 
 ### 5. Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
 Z výsledku vyplývá, že v obdobích výraznějšího hospodářského růstu dochází ke zvyšování mezd spíše **se zpožděním jednoho roku**, což naznačuje, že mzdy reagují na ekonomický růst postupně.
