@@ -78,7 +78,7 @@ Pro poslední výzkumnou otázku jsem vytvořila tabulku **t_veronika_jancikova_
 
 5. Výzkumná otázka č. 5 - 
 Tady jsem se rozhodla omezit výsledky pouze na Českou republiku, protože údaje o cenách potravin a mzdách máme pouze pro ČR. Ponechání všech ostatních zemí z tabuky *countries* by jen prodloužilo výslednou tabulku, ve které by se tak zobrazovaly i nerelevantní informace (prázdné sloupce). 
-V reálu bych na toto upozornila a zpracovala podle požadavku zadavatele, podle potřeby bych všechny země z tabulky *countries* připojila.
+V reálu bych na toto upozornila a zpracovala podle požadavku zadavatele. A protože v reálu můžou data pro všechny země přijít kdykoli, je i teď tabulka *countries* připojena, aby se případně daly ve výsledku rychle zobrazit i ostatní země.
 
 
 ## Výzkumné otázky
